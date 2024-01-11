@@ -1,13 +1,17 @@
 let fetch = require('node-fetch')
-let handler = async (m, { conn, command }) => {
-  let res = await fetch(`https://api.betabotz.eu.org/api/randomgambar/couplepp?apikey=${btc}`)
-  if (res.status != 200) throw await res.text()
-  let json = await res.json()
-  if (!json.status) throw json
-conn.sendFile(m.chat, json.result.female,  'pp.jpg', 'PP Cewenya', m)
-conn.sendFile(m.chat, json.result.male,'pria.jpg',  'PP Cowonya', m)
+let handler = async (m, { conn }) => {
 
+  let data = await (await fetch('https://raw.githubusercontent.com/KazukoGans/database/main/anime/ppcouple.json')).json()
+  let cita = data[Math.floor(Math.random() * data.length)]
+  
+  let cowi = await(await fetch(cita.cowo)).buffer()
+  await conn.sendFile(m.chat, cowi, '', '♂️', m)
+  let ciwi = await(await fetch(cita.cewe)).buffer()
+  await conn.sendFile(m.chat, ciwi, '', '♀️', m)
 }
+handler.help = ['ppcouple', 'ppcp']
+handler.tags = ['img']
+handler.command = ['couplepp','ppcouple'] 
 handler.help = ['ppcp']
 handler.tags = ['internet']
 handler.command = /^ppcp$/i
