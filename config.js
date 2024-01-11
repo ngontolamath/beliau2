@@ -18,6 +18,7 @@ global.maxwarn = '2' // Peringatan maksimum
 global.btc = 'q8ERLAkW' 
 //global.btc = 'y6eHya54'
 //global.btc = 'NQ4KtsFo'
+//global.btc = 'oD4wgh58'
 //Daftar terlebih dahulu https://api.botcahx.eu.org
 
 //INI OPTIONAL BOLEH DI ISI BOLEH JUGA ENGGA//
