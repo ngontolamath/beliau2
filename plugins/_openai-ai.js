@@ -11,7 +11,7 @@ const handler = async (m, { text, conn, usedPrefix, command }) => {
 
   try {
     await m.reply('Thinking....');
-    const prompt = encodeURIComponent(text);
+    const text = encodeURIComponent(text);
 
     const apiEndpoint = `https://ultimetron.guruapi.tech/gpt3?prompt=${text}`;
 
