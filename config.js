@@ -16,6 +16,7 @@ global.maxwarn = '2' // Peringatan maksimum
 
 //INI WAJIB DI ISI!//
 global.btc = 'q8ERLAkW' 
+//global.btc = 'y6eHya54'
 //Daftar terlebih dahulu https://api.botcahx.eu.org
 
 //INI OPTIONAL BOLEH DI ISI BOLEH JUGA ENGGA//
