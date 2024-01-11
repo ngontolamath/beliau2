@@ -22,7 +22,8 @@ global.btc = 'q8ERLAkW'
 //Daftar terlebih dahulu https://api.botcahx.eu.org
 
 //INI OPTIONAL BOLEH DI ISI BOLEH JUGA ENGGA//
-global.lann = 'YOUR_APIKEY_HERE'
+global.lann = 'vBLRh3gb'
+//global.lann = 'u3PIc2hC'
 //Daftar https://api.betabotz.eu.org 
 
 global.APIs = {   
